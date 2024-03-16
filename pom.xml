@@ -1,12 +1,12 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.coderic.ws</groupId>
-	<artifactId>dian</artifactId>
+	<artifactId>sunat</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<name>Dian WS</name>
-	<description>Dian Webservice Endpoint on Jaxb for WS</description>
-	<url>https://CodericBusiness.github.io/org.coderic.ws.dian</url>
+	<name>sunat WS</name>
+	<description>sunat Webservice Endpoint on Jaxb for WS</description>
+	<url>https://CodericBusiness.github.io/org.coderic.ws.sunat</url>
 	<organization>
 		<name>Coderic</name>
 		<url>https://coderic.org/</url>
@@ -19,13 +19,13 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git://github.com/CodericBusiness/org.coderic.ws.dian.git</connection>
-		<developerConnection>scm:git:ssh://github.com:CodericBusiness/org.coderic.ws.dian.git</developerConnection>
-		<url>http://github.com/CodericBusiness/org.coderic.ws.dian/tree/master</url>
+		<connection>scm:git:git://github.com/CodericBusiness/org.coderic.ws.sunat.git</connection>
+		<developerConnection>scm:git:ssh://github.com:CodericBusiness/org.coderic.ws.sunat.git</developerConnection>
+		<url>http://github.com/CodericBusiness/org.coderic.ws.sunat/tree/master</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/CodericBusiness/org.coderic.ws.dian/issues</url>
+		<url>https://github.com/CodericBusiness/org.coderic.ws.sunat/issues</url>
 	</issueManagement>
 	<developers>
 		<developer>
@@ -158,9 +158,12 @@
 					</execution>
 				</executions>
 				<configuration>
-					<packageName>org.coderic.ws.dian.wsdl</packageName>
+					<packageName>org.coderic.ws.sunat.wsdl</packageName>
 					<wsdlUrls>
-						<wsdlUrl>./src/main/wsdl/WcfDianCustomerServices.wsdl</wsdlUrl>
+						<wsdlUrl>https://e-factura.sunat.gob.pe/ol-ti-itcpfegem/billService?wsdl</wsdlUrl>
+						<wsdlUrl>https://e-factura.sunat.gob.pe/ol-ti-itemision-otroscpe-gem/billService?wsdl</wsdlUrl>
+						<wsdlUrl>https://e-factura.sunat.gob.pe/ol-it-wsconsvalidcpe/billValidService?wsdl</wsdlUrl>
+						<wsdlUrl>https://e-factura.sunat.gob.pe/ol-it-wsconscpegem/billConsultService?wsdl</wsdlUrl>
 					</wsdlUrls>
 					<sourceDestDir>./src/main/java</sourceDestDir>
 					<destDir>${classesDir}</destDir>
